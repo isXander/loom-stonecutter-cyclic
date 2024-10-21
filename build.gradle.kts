@@ -1,7 +1,7 @@
 plugins {
     `java-library`
 
-    id("fabric-loom") version "1.7.+"
+    id("dev.architectury.loom") version "1.7.+"
 }
 
 group = "dev.isxander"
