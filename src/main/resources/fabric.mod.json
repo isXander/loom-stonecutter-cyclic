@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "parent",
+  "version": "1.0.0",
+  "environment": "*",
+  "entrypoints": {
+
+  }
+}
