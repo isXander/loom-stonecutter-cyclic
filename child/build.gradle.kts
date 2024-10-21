@@ -11,9 +11,12 @@ repositories {
     mavenCentral()
 }
 
+val parentNode = stonecutter.node.sibling("")!!
+val parentProject = parentNode.project
+
 dependencies {
     minecraft("com.mojang:minecraft:1.21.1")
     mappings(loom.officialMojangMappings())
 
-    implementation(project(rootProject.path, "namedElements"))
+    implementation(project(parentProject.path, "namedElements"))
 }

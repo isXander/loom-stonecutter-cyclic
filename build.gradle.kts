@@ -1,7 +1,7 @@
 plugins {
     `java-library`
 
-    id("fabric-loom") version "1.7.+"
+    id("fabric-loom")
 }
 
 group = "dev.isxander"
@@ -11,9 +11,11 @@ repositories {
     mavenCentral()
 }
 
+val childNode = stonecutter.node.sibling("child")!!
+
 dependencies {
     minecraft("com.mojang:minecraft:1.21.1")
     mappings(loom.officialMojangMappings())
 
-    include(project(":child"))
+    include(childNode.project)
 }
